@@ -8,6 +8,13 @@
 					"type": "SecureString",
 					"value": "**********"
 				}
+			},
+			"secureStringNewTest": {
+				"type": "securestring",
+				"value": {
+					"type": "SecureString",
+					"value": "**********"
+				}
 			}
 		},
 		"globalConfigurations": {
