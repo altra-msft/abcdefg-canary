@@ -1,0 +1,23 @@
+{
+	"name": "abcdefg-canary",
+	"properties": {
+		"globalParameters": {
+			"secureStringGlobalTest": {
+				"type": "securestring",
+				"value": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			}
+		},
+		"globalConfigurations": {
+			"mountedConfiguration": []
+		}
+	},
+	"location": "eastus2euap",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f9cac824-dc19-41eb-b056-48f9e8b49c32",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}
