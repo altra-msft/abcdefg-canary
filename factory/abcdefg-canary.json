@@ -2,7 +2,7 @@
 	"name": "abcdefg-canary",
 	"properties": {
 		"globalParameters": {
-			"GIT_MODE": {
+			"SecureStringTest": {
 				"type": "securestring",
 				"value": {
 					"type": "SecureString",
