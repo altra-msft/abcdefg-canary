@@ -1,15 +1,6 @@
 {
 	"name": "abcdefg-canary",
 	"properties": {
-		"globalParameters": {
-			"SecureStringTest": {
-				"type": "securestring",
-				"value": {
-					"type": "SecureString",
-					"value": "**********"
-				}
-			}
-		},
 		"globalConfigurations": {
 			"mountedConfiguration": []
 		}
