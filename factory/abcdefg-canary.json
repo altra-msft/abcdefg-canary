@@ -2,7 +2,7 @@
 	"name": "abcdefg-canary",
 	"properties": {
 		"globalParameters": {
-			"testValidate": {
+			"testValidateSecureStringGP": {
 				"type": "securestring"
 			}
 		}
