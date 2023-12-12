@@ -2,13 +2,6 @@
 	"name": "abcdefg-canary",
 	"properties": {
 		"globalParameters": {
-			"globalParam": {
-				"type": "securestring",
-				"value": {
-					"type": "SecureString",
-					"value": "**********"
-				}
-			},
 			"testValidate": {
 				"type": "securestring"
 			}
