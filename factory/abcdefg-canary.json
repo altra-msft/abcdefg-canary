@@ -8,6 +8,9 @@
 					"type": "SecureString",
 					"value": "**********"
 				}
+			},
+			"testValidate": {
+				"type": "securestring"
 			}
 		}
 	},
