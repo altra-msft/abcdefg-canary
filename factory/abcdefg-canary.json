@@ -4,6 +4,9 @@
 		"globalParameters": {
 			"gp": {
 				"type": "securestring"
+			},
+			"ss": {
+				"type": "securestring"
 			}
 		}
 	},
