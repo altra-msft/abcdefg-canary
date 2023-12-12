@@ -1,4 +1,11 @@
 {
 	"name": "abcdefg-canary",
+	"properties": {
+		"globalParameters": {
+			"gp": {
+				"type": "securestring"
+			}
+		}
+	},
 	"location": "eastus2euap"
 }
