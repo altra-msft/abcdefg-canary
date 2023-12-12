@@ -1,11 +1,4 @@
 {
 	"name": "abcdefg-canary",
-	"properties": {
-		"globalParameters": {
-			"testValidateSecureStringGP": {
-				"type": "securestring"
-			}
-		}
-	},
 	"location": "eastus2euap"
 }
