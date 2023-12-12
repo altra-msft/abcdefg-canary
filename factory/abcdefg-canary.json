@@ -1,0 +1,15 @@
+{
+	"name": "abcdefg-canary",
+	"properties": {
+		"globalParameters": {
+			"globalParam": {
+				"type": "securestring",
+				"value": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			}
+		}
+	},
+	"location": "eastus2euap"
+}
