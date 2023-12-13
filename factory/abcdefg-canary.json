@@ -7,9 +7,6 @@
 			},
 			"ss": {
 				"type": "securestring"
-			},
-			"dfdfdfd": {
-				"type": "securestring"
 			}
 		}
 	},
