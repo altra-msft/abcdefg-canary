@@ -7,9 +7,6 @@
 			},
 			"ss": {
 				"type": "securestring"
-			},
-			"test": {
-				"type": "securestring"
 			}
 		}
 	},
