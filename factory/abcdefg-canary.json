@@ -19,6 +19,14 @@
 			},
 			"sstest": {
 				"type": "securestring"
+			},
+			"globalparam": {
+				"type": "array",
+				"value": [
+					0,
+					1,
+					2
+				]
 			}
 		}
 	},
