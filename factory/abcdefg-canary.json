@@ -16,6 +16,9 @@
 			},
 			"gpss": {
 				"type": "securestring"
+			},
+			"sstest": {
+				"type": "securestring"
 			}
 		}
 	},
