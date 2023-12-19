@@ -10,6 +10,10 @@
 			},
 			"test": {
 				"type": "securestring"
+			},
+			"globalParamNormal": {
+				"type": "string",
+				"value": "hello"
 			}
 		}
 	},
