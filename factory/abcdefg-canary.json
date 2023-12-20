@@ -5,6 +5,10 @@
 			"nomralstring2": {
 				"type": "string",
 				"value": "normalstring"
+			},
+			"securestringlobalpraam": {
+				"type": "securestring",
+				"value": ""
 			}
 		},
 		"globalConfigurations": {
