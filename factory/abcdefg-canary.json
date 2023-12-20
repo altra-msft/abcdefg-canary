@@ -22,6 +22,13 @@
 					"type": "securestring",
 					"value": ""
 				}
+			},
+			"normalstring": {
+				"__zone_symbol__state": true,
+				"__zone_symbol__value": {
+					"type": "string",
+					"value": "string"
+				}
 			}
 		},
 		"globalConfigurations": {
