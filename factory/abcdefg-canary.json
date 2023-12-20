@@ -3,7 +3,18 @@
 	"properties": {
 		"globalParameters": {
 			"globalParamTry2": {
-				"type": "securestring"
+				"__zone_symbol__state": true,
+				"__zone_symbol__value": {
+					"type": "securestring",
+					"value": ""
+				}
+			},
+			"globalParamTryAdapater": {
+				"__zone_symbol__state": true,
+				"__zone_symbol__value": {
+					"type": "securestring",
+					"value": ""
+				}
 			}
 		},
 		"globalConfigurations": {
