@@ -3,6 +3,9 @@
 	"properties": {
 		"globalParameters": {
 			"fdfs": {
+				"__zone_symbol__state": true
+			},
+			"afsddf": {
 				"__zone_symbol__state": true,
 				"__zone_symbol__value": {
 					"type": "securestring",
