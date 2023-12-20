@@ -1,6 +1,12 @@
 {
 	"name": "abcdefg-canary",
 	"properties": {
+		"globalParameters": {
+			"ssGP": {
+				"type": "securestring",
+				"value": ""
+			}
+		},
 		"globalConfigurations": {
 			"mountedConfiguration": []
 		}
