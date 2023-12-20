@@ -1,6 +1,11 @@
 {
 	"name": "abcdefg-canary",
 	"properties": {
+		"globalParameters": {
+			"globalParamTry2": {
+				"type": "securestring"
+			}
+		},
 		"globalConfigurations": {
 			"mountedConfiguration": []
 		}
