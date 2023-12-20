@@ -1,15 +1,6 @@
 {
 	"name": "abcdefg-canary",
 	"properties": {
-		"globalParameters": {
-			"securestringGPGIT": {
-				"__zone_symbol__state": true,
-				"__zone_symbol__value": {
-					"type": "securestring",
-					"value": ""
-				}
-			}
-		},
 		"globalConfigurations": {
 			"mountedConfiguration": []
 		}
