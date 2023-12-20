@@ -2,33 +2,9 @@
 	"name": "abcdefg-canary",
 	"properties": {
 		"globalParameters": {
-			"globalParamTry2": {
-				"__zone_symbol__state": true,
-				"__zone_symbol__value": {
-					"type": "securestring",
-					"value": ""
-				}
-			},
-			"globalParamTryAdapater": {
-				"__zone_symbol__state": true,
-				"__zone_symbol__value": {
-					"type": "securestring",
-					"value": ""
-				}
-			},
-			"globalparamererjlfjdsf": {
-				"__zone_symbol__state": true,
-				"__zone_symbol__value": {
-					"type": "securestring",
-					"value": ""
-				}
-			},
-			"normalstring": {
-				"__zone_symbol__state": true,
-				"__zone_symbol__value": {
-					"type": "string",
-					"value": "string"
-				}
+			"nomralstring2": {
+				"type": "string",
+				"value": "normalstring"
 			}
 		},
 		"globalConfigurations": {
