@@ -1,6 +1,15 @@
 {
 	"name": "abcdefg-canary",
 	"properties": {
+		"globalParameters": {
+			"globalParamGIT_NESTED": {
+				"type": "securestring",
+				"value": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			}
+		},
 		"globalConfigurations": {
 			"mountedConfiguration": []
 		}
