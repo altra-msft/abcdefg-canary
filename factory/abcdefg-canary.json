@@ -5,6 +5,10 @@
 			"ssGP": {
 				"type": "securestring",
 				"value": ""
+			},
+			"normalString": {
+				"type": "string",
+				"value": "normalstring"
 			}
 		},
 		"globalConfigurations": {
