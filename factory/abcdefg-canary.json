@@ -2,11 +2,11 @@
 	"name": "abcdefg-canary",
 	"properties": {
 		"globalParameters": {
-			"ssGP": {
+			"securestringGlobalParam": {
 				"type": "securestring",
 				"value": ""
 			},
-			"normalString": {
+			"normalStringGlobalParam": {
 				"type": "string",
 				"value": "normalstring"
 			}
