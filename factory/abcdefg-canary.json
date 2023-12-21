@@ -2,13 +2,33 @@
 	"name": "abcdefg-canary",
 	"properties": {
 		"globalParameters": {
-			"securestringGlobalParam": {
+			"ssGP": {
 				"type": "securestring",
-				"value": ""
+				"value": {
+					"type": "SecureString",
+					"value": "**********"
+				}
 			},
-			"normalStringGlobalParam": {
-				"type": "string",
-				"value": "normalstring"
+			"livemodetest": {
+				"type": "securestring",
+				"value": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			},
+			"LiveTEST": {
+				"type": "securestring",
+				"value": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			},
+			"liveTESTEMPTY": {
+				"type": "securestring",
+				"value": {
+					"type": "SecureString",
+					"value": "**********"
+				}
 			}
 		},
 		"globalConfigurations": {
