@@ -29,6 +29,10 @@
 					"type": "SecureString",
 					"value": "**********"
 				}
+			},
+			"test": {
+				"type": "securestring",
+				"value": ""
 			}
 		},
 		"globalConfigurations": {
