@@ -8,6 +8,12 @@
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
+		"default_properties_fdfsf_value": {
+			"value": ""
+		},
+		"default_properties_yyy_value": {
+			"value": " vgg"
+		},
 		"containerUri": {
 			"value": ""
 		},

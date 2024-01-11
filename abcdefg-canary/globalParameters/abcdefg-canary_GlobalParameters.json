@@ -1,6 +1,10 @@
 {
-	"ssGP": {
+	"fdfsf": {
 		"type": "securestring",
 		"value": "**********"
+	},
+	"yyy": {
+		"type": "string",
+		"value": " vgg"
 	}
 }
