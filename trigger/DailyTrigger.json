@@ -1,0 +1,32 @@
+{
+	"name": "DailyTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2024-01-12T11:44:00",
+				"timeZone": "Pacific Standard Time",
+				"schedule": {
+					"minutes": [
+						45
+					],
+					"hours": [
+						11
+					]
+				}
+			}
+		}
+	}
+}
