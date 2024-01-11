@@ -16,16 +16,8 @@
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2024-01-12T11:44:00",
-				"timeZone": "Pacific Standard Time",
-				"schedule": {
-					"minutes": [
-						45
-					],
-					"hours": [
-						11
-					]
-				}
+				"startTime": "2024-01-11T11:53:00",
+				"timeZone": "Pacific Standard Time"
 			}
 		}
 	}
