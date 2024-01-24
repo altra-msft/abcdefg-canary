@@ -5,6 +5,10 @@
 			"gpSS": {
 				"type": "securestring",
 				"value": ""
+			},
+			"ggGITSecure": {
+				"type": "securestring",
+				"value": ""
 			}
 		},
 		"globalConfigurations": {
