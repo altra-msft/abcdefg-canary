@@ -1,0 +1,53 @@
+{
+	"name": "CHILD RETURN VALUE",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "userpropertytest",
+						"value": "@concat(variables('testVar'),variables('testVar2'))"
+					}
+				],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "ChildReturn",
+							"value": {
+								"type": "String",
+								"content": "hello world"
+							}
+						},
+						{
+							"key": "efsff",
+							"value": {
+								"type": "Expression",
+								"content": "dfdfdfd"
+							}
+						}
+					],
+					"setSystemVariable": true
+				}
+			}
+		],
+		"variables": {
+			"testVar": {
+				"type": "String"
+			},
+			"testVar2": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2024-01-11T19:03:20Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

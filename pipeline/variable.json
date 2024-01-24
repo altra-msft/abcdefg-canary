@@ -1,0 +1,36 @@
+{
+	"name": "variable",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "GET",
+					"url": {
+						"value": "@variables('url')",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"variables": {
+			"url": {
+				"type": "String",
+				"defaultValue": "https://api2.binance.com/api/v3/ticker/24hr"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-08-22T20:20:10Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

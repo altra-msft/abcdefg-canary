@@ -1,0 +1,111 @@
+{
+	"name": "pipeline1_copy2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "GET",
+					"url": "https://api2.binance.com/api/v3/ticker/24hr"
+				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Web1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "jerry",
+					"value": "mouse"
+				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Set variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "[0,1,2]",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Wait1",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 1
+							}
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"sakura": {
+				"type": "string",
+				"defaultValue": "kinomoto"
+			},
+			"usagi": {
+				"type": "string",
+				"defaultValue": "tsukimono"
+			},
+			"light": {
+				"type": "String",
+				"defaultValue": "yagami"
+			}
+		},
+		"variables": {
+			"jerry": {
+				"type": "String",
+				"defaultValue": "mander"
+			},
+			"tom": {
+				"type": "String",
+				"defaultValue": "holland"
+			},
+			"bob": {
+				"type": "String"
+			},
+			"njhbgv": {
+				"type": "Array"
+			},
+			"ford": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-07-21T21:36:51Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,33 @@
+{
+	"name": "ChildPipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "ChildReturn",
+							"value": {
+								"type": "String",
+								"content": "hello world"
+							}
+						}
+					],
+					"setSystemVariable": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-08-02T17:54:16Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

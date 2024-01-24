@@ -1,0 +1,92 @@
+{
+	"name": "setvar objkey",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": true,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "objKeyNested",
+							"value": {
+								"type": "Object",
+								"content": [
+									{
+										"key": "innerKey1",
+										"value": {
+											"type": "String",
+											"content": "val1"
+										}
+									},
+									{
+										"key": "innerKey2",
+										"value": {
+											"type": "String",
+											"content": "val2"
+										}
+									}
+								]
+							}
+						},
+						{
+							"key": "objKeyReal",
+							"value": {
+								"type": "Object",
+								"content": [
+									{
+										"key": "innerKey1",
+										"value": {
+											"type": "String",
+											"content": "val1"
+										}
+									},
+									{
+										"key": "innerKey2",
+										"value": {
+											"type": "String",
+											"content": "val2"
+										}
+									}
+								]
+							}
+						},
+						{
+							"key": "objKeyAgain",
+							"value": {
+								"type": "Object",
+								"content": [
+									{
+										"key": "objNest1",
+										"value": {
+											"type": "String",
+											"content": "val1"
+										}
+									},
+									{
+										"key": "objNest2",
+										"value": {
+											"type": "Int",
+											"content": "3"
+										}
+									}
+								]
+							}
+						}
+					],
+					"setSystemVariable": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-03-21T21:29:55Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,106 @@
+{
+	"name": "TEST",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "key1",
+							"value": {
+								"type": "Int",
+								"content": 101
+							}
+						},
+						{
+							"key": "keyStr",
+							"value": {
+								"type": "Expression"
+							}
+						},
+						{
+							"key": "expKey",
+							"value": {
+								"type": "ExpressionString"
+							}
+						},
+						{
+							"key": "expKeyInt",
+							"value": {
+								"type": "ExpressionString"
+							}
+						}
+					],
+					"setSystemVariable": true
+				}
+			},
+			{
+				"name": "Script1",
+				"type": "Script",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"linkedServiceName": {
+					"referenceName": "SqlServer1",
+					"type": "LinkedServiceReference"
+				},
+				"typeProperties": {
+					"scripts": [
+						{
+							"parameters": [
+								{
+									"name": "",
+									"type": "Byte[]",
+									"value": "nnnnn",
+									"direction": "Output"
+								}
+							],
+							"type": "NonQuery",
+							"text": {
+								"value": "@pipeline().globalParameters.dark",
+								"type": "Expression"
+							}
+						}
+					],
+					"scriptBlockExecutionTimeout": "02:00:00"
+				}
+			}
+		],
+		"variables": {
+			"arrayTest": {
+				"type": "Array",
+				"defaultValue": [
+					0,
+					1,
+					2
+				]
+			},
+			"boolTest": {
+				"type": "Boolean",
+				"defaultValue": true
+			},
+			"stringTest": {
+				"type": "String",
+				"defaultValue": "donkey"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-02-08T11:21:06Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

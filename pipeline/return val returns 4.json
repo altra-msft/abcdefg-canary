@@ -1,0 +1,32 @@
+{
+	"name": "return val returns 4",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "expKey",
+							"value": {
+								"type": "ExpressionString"
+							}
+						}
+					],
+					"setSystemVariable": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-01-26T23:54:55Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

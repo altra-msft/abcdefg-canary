@@ -1,0 +1,29 @@
+{
+	"name": "custom events",
+	"properties": {
+		"description": "ghghg",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1_copy2",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"sakura": "cards",
+					"usagi": "moon"
+				}
+			}
+		],
+		"type": "CustomEventsTrigger",
+		"typeProperties": {
+			"subjectEndsWith": "",
+			"subjectBeginsWith": "dfd",
+			"scope": "/subscriptions/1e42591f-1f0c-4c5a-b7f2-a268f6105ec5/resourceGroups/ADF/providers/Microsoft.EventGrid/topics/customEventDemo",
+			"events": [
+				"dfdfd"
+			]
+		}
+	}
+}

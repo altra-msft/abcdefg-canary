@@ -1,0 +1,29 @@
+{
+	"name": "im triggered",
+	"properties": {
+		"description": "test",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1_copy2",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"sakura": "card",
+					"usagi": "moon"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 16,
+				"startTime": "2022-06-28T22:30:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

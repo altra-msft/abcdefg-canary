@@ -1,0 +1,48 @@
+{
+	"name": "setvar objkey_copy1 try fix",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": true,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "objKeyAgain",
+							"value": {
+								"type": "Object",
+								"content": [
+									{
+										"key": "objNest1",
+										"value": {
+											"type": "Int",
+											"content": 6
+										}
+									},
+									{
+										"key": "objNest2",
+										"value": {
+											"type": "Int",
+											"content": 3
+										}
+									}
+								]
+							}
+						}
+					],
+					"setSystemVariable": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-08-02T17:29:29Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

@@ -1,0 +1,66 @@
+{
+	"name": "Set Pipeline Output",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "intArray",
+					"value": [
+						0,
+						1,
+						2
+					]
+				}
+			},
+			{
+				"name": "Actually Set Pipeline Output",
+				"description": "It's a Set Variable activity, but it's used to set Pipeline Output.",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Set variable1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "food",
+					"value": "delicios"
+				}
+			}
+		],
+		"variables": {
+			"food": {
+				"type": "String"
+			},
+			"pipelineReturnValue": {
+				"type": "String"
+			},
+			"intArray": {
+				"type": "Array",
+				"defaultValue": [
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-10-04T21:05:13Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

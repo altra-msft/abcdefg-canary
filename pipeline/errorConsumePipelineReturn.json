@@ -1,0 +1,76 @@
+{
+	"name": "errorConsumePipelineReturn",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "errorSetVar",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"intParam": {
+							"value": "@pipeline().parameters.inputInt",
+							"type": "Expression"
+						}
+					}
+				}
+			},
+			{
+				"name": "SuccessWait",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Execute Pipeline1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": {
+						"value": "@activity('Execute Pipeline1').output.pipelineReturnValue.intKey",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "FailWait",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Execute Pipeline1",
+						"dependencyConditions": [
+							"Failed"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": {
+						"value": "@activity('Execute Pipeline1').output.pipelineReturnValue.intKey",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"inputInt": {
+				"type": "int",
+				"defaultValue": 1
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-01-30T19:00:30Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

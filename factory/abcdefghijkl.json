@@ -1,0 +1,24 @@
+{
+	"name": "abcdefghijkl",
+	"properties": {
+		"globalParameters": {
+			"dark": {
+				"type": "string",
+				"value": "palladin"
+			},
+			"secureSTringGP": {
+				"type": "securestring",
+				"value": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			}
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "38862e51-fba6-467c-b03f-7c1f8e18cf98",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}

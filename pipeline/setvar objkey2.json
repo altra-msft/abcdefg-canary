@@ -1,0 +1,150 @@
+{
+	"name": "setvar objkey2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"description": "bgh",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "objKey",
+							"value": {
+								"type": "Object",
+								"content": [
+									{
+										"key": "objNest1",
+										"value": {
+											"type": "String",
+											"content": "val1"
+										}
+									},
+									{
+										"key": "objNest2",
+										"value": {
+											"type": "Int",
+											"content": 3
+										}
+									}
+								]
+							}
+						},
+						{
+							"key": "objKey2",
+							"value": {
+								"type": "Object",
+								"content": [
+									{
+										"key": "objNest22",
+										"value": {
+											"type": "String",
+											"content": "val1"
+										}
+									},
+									{
+										"key": "objNest23",
+										"value": {
+											"type": "Int",
+											"content": 5
+										}
+									}
+								]
+							}
+						},
+						{
+							"key": "arrKey",
+							"value": {
+								"type": "Array",
+								"content": [
+									{
+										"type": "String",
+										"content": "sally"
+									},
+									{
+										"type": "String",
+										"content": "hinata"
+									}
+								]
+							}
+						}
+					],
+					"setSystemVariable": true
+				}
+			},
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "GET",
+					"url": "https://api.genderize.io?name=harry"
+				}
+			},
+			{
+				"name": "Set variable2",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": true,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "boolkey",
+							"value": {
+								"type": "Boolean",
+								"content": true
+							}
+						}
+					],
+					"setSystemVariable": true
+				}
+			},
+			{
+				"name": "Set variable3",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": true
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "boolkey3",
+							"value": {
+								"type": "Boolean",
+								"content": true
+							}
+						}
+					],
+					"setSystemVariable": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-03-22T17:24:46Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

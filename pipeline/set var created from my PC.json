@@ -1,0 +1,33 @@
+{
+	"name": "set var created from my PC",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "keyExp",
+							"value": {
+								"type": "Expression",
+								"content": "@add(1,2)"
+							}
+						}
+					],
+					"setSystemVariable": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-01-27T00:12:05Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

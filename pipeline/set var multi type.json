@@ -1,0 +1,54 @@
+{
+	"name": "set var multi type",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "intKey",
+							"value": {
+								"type": "Int",
+								"content": 2
+							}
+						},
+						{
+							"key": "boolKey",
+							"value": {
+								"type": "Boolean",
+								"content": true
+							}
+						},
+						{
+							"key": "strKey",
+							"value": {
+								"type": "String",
+								"content": "stringTest"
+							}
+						},
+						{
+							"key": "floatKey",
+							"value": {
+								"type": "Float",
+								"content": 2.2
+							}
+						}
+					],
+					"setSystemVariable": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-02-08T11:34:01Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
