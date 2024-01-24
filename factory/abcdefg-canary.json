@@ -2,23 +2,9 @@
 	"name": "abcdefg-canary",
 	"properties": {
 		"globalParameters": {
-			"fdfsf": {
+			"gpSS": {
 				"type": "securestring",
-				"value": {
-					"type": "SecureString",
-					"value": "**********"
-				}
-			},
-			"yyy": {
-				"type": "string",
-				"value": " vgg"
-			},
-			"newGPSwitchToGit": {
-				"type": "securestring",
-				"value": {
-					"type": "SecureString",
-					"value": "**********"
-				}
+				"value": ""
 			}
 		},
 		"globalConfigurations": {
