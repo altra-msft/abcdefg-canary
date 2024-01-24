@@ -11,13 +11,13 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
 		},
-		"default_properties_fdfsf_value": {
+		"default_properties_gpSS_value": {
 			"type": "string",
 			"defaultValue": ""
 		},
-		"default_properties_yyy_value": {
+		"default_properties_ggGITSecure_value": {
 			"type": "string",
-			"defaultValue": " vgg"
+			"defaultValue": ""
 		}
 	},
 	"variables": {
@@ -29,26 +29,13 @@
 			"type": "Microsoft.DataFactory/factories/globalparameters",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"fdfsf": {
+				"gpSS": {
 					"type": "securestring",
-					"value": "[parameters('default_properties_fdfsf_value')]"
+					"value": "[parameters('default_properties_gpSS_value')]"
 				},
-				"yyy": {
-					"type": "string",
-					"value": "[parameters('default_properties_yyy_value')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureBlobStorage1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureBlobStorage1_connectionString')]"
+				"ggGITSecure": {
+					"type": "securestring",
+					"value": "[parameters('default_properties_ggGITSecure_value')]"
 				}
 			},
 			"dependsOn": []
@@ -72,7 +59,21 @@
 				"policy": {
 					"elapsedTimeMetric": {}
 				},
-				"annotations": []
+				"annotations": [],
+				"lastPublishTime": "2024-01-11T19:42:25Z"
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureBlobStorage1')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureBlobStorage1_connectionString')]"
+				}
 			},
 			"dependsOn": []
 		},
@@ -98,8 +99,7 @@
 						"frequency": "Day",
 						"interval": 1,
 						"startTime": "2024-01-11T11:53:00",
-						"timeZone": "Pacific Standard Time",
-						"schedule": {}
+						"timeZone": "Pacific Standard Time"
 					}
 				}
 			},
@@ -129,8 +129,7 @@
 						"frequency": "Week",
 						"interval": 1,
 						"startTime": "2024-01-11T11:49:00",
-						"timeZone": "Pacific Standard Time",
-						"schedule": {}
+						"timeZone": "Pacific Standard Time"
 					}
 				}
 			},
