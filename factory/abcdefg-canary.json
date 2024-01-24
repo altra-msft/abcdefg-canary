@@ -4,11 +4,21 @@
 		"globalParameters": {
 			"fdfsf": {
 				"type": "securestring",
-				"value": ""
+				"value": {
+					"type": "SecureString",
+					"value": "**********"
+				}
 			},
 			"yyy": {
 				"type": "string",
 				"value": " vgg"
+			},
+			"newGPSwitchToGit": {
+				"type": "securestring",
+				"value": {
+					"type": "SecureString",
+					"value": "**********"
+				}
 			}
 		},
 		"globalConfigurations": {
