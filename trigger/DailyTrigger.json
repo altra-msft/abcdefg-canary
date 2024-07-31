@@ -2,11 +2,11 @@
 	"name": "DailyTrigger",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "waitttt",
+					"referenceName": "random cat fact",
 					"type": "PipelineReference"
 				}
 			}
@@ -16,7 +16,7 @@
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2024-01-12T11:35:00",
+				"startTime": "2024-01-11T11:53:00",
 				"timeZone": "Pacific Standard Time"
 			}
 		}

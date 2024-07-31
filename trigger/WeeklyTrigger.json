@@ -2,11 +2,11 @@
 	"name": "WeeklyTrigger",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "waitttt",
+					"referenceName": "random cat fact",
 					"type": "PipelineReference"
 				}
 			}
@@ -16,7 +16,7 @@
 			"recurrence": {
 				"frequency": "Week",
 				"interval": 1,
-				"startTime": "2024-01-12T11:10:00",
+				"startTime": "2024-01-11T11:49:00",
 				"timeZone": "Pacific Standard Time"
 			}
 		}
