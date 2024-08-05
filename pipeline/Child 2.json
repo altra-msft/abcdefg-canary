@@ -1,0 +1,74 @@
+{
+	"name": "Child 2",
+	"properties": {
+		"activities": [
+			{
+				"name": "If Condition1",
+				"type": "IfCondition",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@equals(pipeline().parameters.ExpectedValueArrayInt, createArray(1,2,3))",
+						"type": "Expression"
+					},
+					"ifFalseActivities": [
+						{
+							"name": "Fail1",
+							"type": "Fail",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"message": {
+									"value": "@concat('Expected: ', string(pipeline().parameters.ExpectedValueArrayInt), ', Actual: ', string(createArray(1,2,3)) )",
+									"type": "Expression"
+								},
+								"errorCode": "400"
+							}
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"ExpectedValue": {
+				"type": "array",
+				"defaultValue": [
+					"VALIDATED",
+					"complete",
+					"200"
+				]
+			},
+			"ExpectedValueBasic": {
+				"type": "string",
+				"defaultValue": "basic"
+			},
+			"ExpectedValueArrayInt": {
+				"type": "array",
+				"defaultValue": [
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"variables": {
+			"TestValue": {
+				"type": "Array"
+			},
+			"TestValueBasic": {
+				"type": "String",
+				"defaultValue": "basic"
+			},
+			"TestValueArrayInt": {
+				"type": "Array",
+				"defaultValue": [
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"annotations": []
+	}
+}
