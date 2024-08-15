@@ -20,9 +20,20 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "true",
+									"value": "@bool(true)",
 									"type": "Expression"
 								},
+								"ifFalseActivities": [
+									{
+										"name": "Wait2",
+										"type": "Wait",
+										"dependsOn": [],
+										"userProperties": [],
+										"typeProperties": {
+											"waitTimeInSeconds": 1
+										}
+									}
+								],
 								"ifTrueActivities": [
 									{
 										"name": "Switch1",
@@ -34,7 +45,22 @@
 												"value": "true",
 												"type": "Expression"
 											},
-											"cases": [],
+											"cases": [
+												{
+													"value": "Case1",
+													"activities": [
+														{
+															"name": "Wait3",
+															"type": "Wait",
+															"dependsOn": [],
+															"userProperties": [],
+															"typeProperties": {
+																"waitTimeInSeconds": 1
+															}
+														}
+													]
+												}
+											],
 											"defaultActivities": [
 												{
 													"name": "Wait1",
