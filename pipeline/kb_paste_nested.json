@@ -1,0 +1,70 @@
+{
+	"name": "kb_paste_nested",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.items",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "If Condition1",
+							"type": "IfCondition",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"expression": {
+									"value": "true",
+									"type": "Expression"
+								},
+								"ifTrueActivities": [
+									{
+										"name": "Switch1",
+										"type": "Switch",
+										"dependsOn": [],
+										"userProperties": [],
+										"typeProperties": {
+											"on": {
+												"value": "true",
+												"type": "Expression"
+											},
+											"cases": [],
+											"defaultActivities": [
+												{
+													"name": "Wait1",
+													"type": "Wait",
+													"dependsOn": [],
+													"userProperties": [],
+													"typeProperties": {
+														"waitTimeInSeconds": 1
+													}
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		],
+		"parameters": {
+			"items": {
+				"type": "array",
+				"defaultValue": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"annotations": []
+	}
+}
